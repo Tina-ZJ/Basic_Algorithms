@@ -1,1 +1,6 @@
 This is some solutions which are written by python code for book Introduction to Algorithms
+
+排序算法
+1. 插入排序     insert_sort.py
+2. 归并排序     merge_sort.py
+3. 堆排序       heap_sort.py

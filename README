@@ -8,3 +8,4 @@ This is some solutions which are written by python code for book Introduction to
 桶排序       bucket_sort.py 
 随机排列     random_permute.py
 最大子数组   max_subarray.py
+选择算法     randomized_select.py

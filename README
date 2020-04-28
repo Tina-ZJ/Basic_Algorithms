@@ -11,4 +11,4 @@ This is some solutions which are written by python code for book Introduction to
 选择算法     randomized_select.py
 栈和队列     stack_queue.py
 双向链表     doubly_linked_list.py
-开发寻址法	 open_addressing_hash.py
+开放寻址法   open_addressing_hash.py

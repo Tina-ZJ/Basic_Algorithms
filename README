@@ -15,3 +15,4 @@ This is some solutions which are written by python code for book Introduction to
 二叉搜索树   binary_search_tree.py
 红黑树       red_black_tree.py
 动态规划（钢条切割最大收益）  dynamic.py
+赫夫曼树     huffman_tree.py

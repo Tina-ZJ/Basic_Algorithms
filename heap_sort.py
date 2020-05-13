@@ -23,6 +23,27 @@ def max_heapify(A, i, size):
 		# 以largest为根节点的子树，可能又违背最大堆性质，所以需要继续递归调用
 		max_heapify(A, largest, size)
 
+# 维持最小堆的性质
+def min_heapify(A, i, size):
+	# 节点i的左孩子, 由于python 索引是从0开始，不是从1开始，所以左 2*i --> 2*i+1   右 2*i+1 --> 2*i+2
+	l = 2*i+1
+	# 节点i的右孩子
+	r = 2*i + 2
+	#size = len(A)
+	size = size
+	if l<size and A[l]<A[i]:
+		largest = l
+	else:
+		largest = i
+	if r<size and A[r]<A[largest]:
+		largest = r
+	if largest!=i:
+		temp = A[i]
+		A[i] = A[largest]
+		A[largest] = temp
+		# 以largest为根节点的子树，可能又违背最大堆性质，所以需要继续递归调用
+		min_heapify(A, largest, size)
+
 
 #建堆，自顶向下方法，把一个大小为n的数组A，转换为最大堆
 def build_max_heap(A):
@@ -31,6 +52,15 @@ def build_max_heap(A):
 	#从堆的性质得出 A[mid+1..size]都是树的叶节点，所以只需要对其他节点调用max_heapify，保证最大堆的性质就可
 	for i in range(mid,-1,-1):
 		max_heapify(A,i, size)
+	return A
+
+#建堆，自顶向下方法，把一个大小为n的数组A，转换为最小堆
+def build_min_heap(A):
+	size = len(A)
+	mid = int(size/2) - 1
+	#从堆的性质得出 A[mid+1..size]都是树的叶节点，所以只需要对其他节点调用min_heapify，保证最小堆的性质就可
+	for i in range(mid,-1,-1):
+		min_heapify(A,i, size)
 	return A
 
 def heap_sort(A):
@@ -46,6 +76,7 @@ def heap_sort(A):
 		A[0] = temp
 		max_heapify(A,0, i)
 	return A
+
 if __name__=='__main__':
 	A = [4,1,3,2,16,9,10,14,8,7]
 	print(A)

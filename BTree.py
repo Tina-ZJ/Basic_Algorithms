@@ -52,10 +52,11 @@ class BTree(object):
 		z.n = self.t-1	
 		#把y的t-1个关键字以及相应的t个孩子赋值z
 		for j in range(self.t-1):
-			z.keys[j] = y.keys[j+self.t]		
+			z.keys[j] = y.keys[j+self.t]	
 		if not y.leaf:
 			for j in range(self.t):
 				z.childs[j] = y.childs[j+self.t]
+
 		#调整y的关键字个数
 		y.n = self.t - 1
 		# z插入为x的一个孩子
@@ -64,7 +65,7 @@ class BTree(object):
 		x.childs[i+1] = z
 		#提升y的中间关键字到x来分割y和z
 		for j in range(x.n, i-1, -1):
-			x.keys[j+1] = x.keys[j]
+			x.keys[j] = x.keys[j-1]
 		x.keys[i] = y.keys[self.t-1]
 		#调整x的关键字个数
 		x.n = x.n+1	
@@ -76,7 +77,7 @@ class BTree(object):
 		i = x.n
 		#x是叶子节点，直接插入
 		if x.leaf:
-			while i>0 and k<x.keys[i-1]:
+			while i>=1 and k<x.keys[i-1]:
 				x.keys[i] = x.keys[i-1]
 				i-=1
 			x.keys[i] = k
@@ -84,7 +85,7 @@ class BTree(object):
 			x.n+=1
 		#非叶节点
 		else:
-			while i>0 and k<x.keys[i-1]:
+			while i>=1 and k<x.keys[i-1]:
 				i-=1
 			i+=1
 			#判断是否递归降至一个满子节点
@@ -124,12 +125,53 @@ class BTree(object):
 		else:
 			self.btree_insert_nonfull(r,k)
 
-	#遍历
-	def btree_walk(self, btree):
-		if btree is not None:
-			
+	#遍历,逐层遍历
+	def btree_walk(self):
+		current = [self.root]
+		while current:
+			next_current = []
+			output = ""
+			for node in current:
+				if node !=None and node.childs:
+					next_current.extend(node.childs)
+				if node !=None:
+					output+=''.join(node.keys[0:node.n]) + " "
+			print(output)
+			current = next_current
+
+	#中序遍历，从小到大的顺序输出key
+	def btree_order(self, tree):
+		if tree is not None:
+			for i in range(tree.n):
+				self.btree_order(tree.childs[i])
+				print(tree.keys[i],end=" ")
+				self.btree_order(tree.childs[i+1])
+	# search
+	def btree_search(self,x, k):
+		i = 0
+		while i<=x.n and k > x.keys[i]:
+			i+=1
+		# 检查是否已经找到关键字
+		if i < x.n and k == x.keys[i]:
+			return (x,i)
+		#没找到，若是叶子节点，则查找不成功
+		elif x.leaf:
+			return None
+		#非叶子节点，继续递归查找孩子节点
+		else:
+			return self.btree_search(x.childs[i],k)
 
 if __name__=='__main__':
 	tree = BTree(3)
-	for x in ['G','M','P','X','A','C','D','E','J','K','N','O','R','S','T','U','V','Y','Z']:
-		tree.btree_insert(x)	
+	for x in ['G','M','P','X', 'A','C','D','E','J','K','N','O','R','S','T','U','V','Y','Z', 'B','Q','L', 'F']:
+		tree.btree_insert(x)
+	#逐层遍历和从小到大遍历输出
+	tree.btree_walk()
+	tree.btree_order(tree.root)
+	print('\n')
+	#search
+	result = tree.btree_search(tree.root, '1')
+	if result!=None:
+		print("find key :"+result[0].keys[result[1]])
+	else:
+		print("not find key")

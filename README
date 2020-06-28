@@ -18,3 +18,4 @@ This is some solutions which are written by python code for book Introduction to
 赫夫曼树     huffman_tree.py
 B树          BTree.py
 图的遍历     graph.py
+最小树生成   Prim.py   Kruskal.py

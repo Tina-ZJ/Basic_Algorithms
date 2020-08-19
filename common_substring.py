@@ -1,0 +1,30 @@
+# -*- coding -*-
+import sys
+import numpy as np
+
+
+def getCommon(s1, s2):
+	m = len(s1)
+	n = len(s2)
+	# save common len
+	d = np.zeros((m+1,n+1), dtype=int)
+	# max sub len
+	maxlen = 0
+	# the last substring index
+	index = 0
+	for i in range(m):
+		for j in range(n):
+			if s1[i]==s2[j]:
+				d[i+1][j+1] = d[i][j] + 1
+			if d[i+1][j+1] > maxlen:
+				maxlen = d[i+1][j+1]
+				index = i
+	return maxlen, s1[index+1-maxlen:index+1]
+
+
+if __name__=='__main__':
+	s1 = 'acdeffghi'
+	s2 = 'acdkrfghi'
+	maxlen, substring = getCommon(s1, s2)
+	print(maxlen)	
+	print(substring)	

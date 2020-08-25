@@ -1,7 +1,7 @@
 This is some solutions which are written by python code for book Introduction to Algorithms
 
 算法
-# 插入排序     
+## 插入排序     
 insert_sort.py
 # 归并排序    
  merge_sort.py

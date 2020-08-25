@@ -4,7 +4,7 @@ This is some solutions which are written by python code for book Introduction to
 ## 插入排序     
 insert_sort.py
 # 归并排序    
- merge_sort.py
+ **merge_sort.py**
 # 堆排序       heap_sort.py
 计数排序     count_sort.py
 桶排序       bucket_sort.py 

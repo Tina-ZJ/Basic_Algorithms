@@ -1,7 +1,8 @@
-# This is some solutions which are written by python code for book Introduction to Algorithms and Leetcode 
+**This is some solutions which are written by python code for book Introduction to Algorithms and Leetcode**
 
 ## 插入排序     
 insert_sort.py
+[插入排序](https://github.com/Tina-ZJ/Basic_Algorithms/edit/master/README.md)
 ## 归并排序    
 merge_sort.py
 ## 堆排序       

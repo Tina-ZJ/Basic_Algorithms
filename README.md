@@ -1,8 +1,7 @@
 **This is some solutions which are written by python code for book Introduction to Algorithms and Leetcode**
 
 ## 插入排序     
-insert_sort.py
-[插入排序](https://github.com/Tina-ZJ/Basic_Algorithms/edit/master/README.md)
+[insert_sort.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/insert_sort.py)
 ## 归并排序    
 merge_sort.py
 ## 堆排序       

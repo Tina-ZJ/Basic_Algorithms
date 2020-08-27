@@ -56,3 +56,5 @@
 [palindrome.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/palindrome.py)
 ### 字符串反转
 [reverse_str.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/reverse_str.py)
+### 字符串模式匹配
+[match_str.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/match_str.py)

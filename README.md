@@ -60,3 +60,7 @@
 [match_str.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/match_str.py)
 ### 字符串前缀匹配
 [prefix_match.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/prefix_match.py)
+### 字典trie匹配
+[dictTree.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/dictTree.py)
+### 最大连续字符串
+[continuous_char.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/continuous_char.py)

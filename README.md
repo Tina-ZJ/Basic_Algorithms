@@ -64,3 +64,5 @@
 [dictTree.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/dictTree.py)
 ### 最大连续字符串
 [continuous_char.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/continuous_char.py)
+### 字符串压缩
+[compress_string.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/compress_string.py)

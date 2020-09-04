@@ -66,3 +66,5 @@
 [continuous_char.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/continuous_char.py)
 ### 字符串压缩
 [compress_string.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/compress_string.py)
+### 最短路径和
+[min_path.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/min_path.py)

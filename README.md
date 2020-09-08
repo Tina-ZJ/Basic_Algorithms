@@ -12,8 +12,11 @@
 [bucket_sort.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/bucket_sort.py)
 ### 随机排列     
 [random_permute.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/random_permute.py)
-### 最大子数组   
+### 最大子数组  
+分治求解 
 [max_subarray.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/max_subarray.py)
+动态规划求解
+[max_subarray_dp.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/max_subarray_dp.py)
 ### 选择算法     
 [randomized_select.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/randomized_select.py)
 ### 栈和队列     

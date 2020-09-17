@@ -79,3 +79,5 @@
 [coins_select.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/coins_select.py)
 ### 最少完全平方数
 [num_squares.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/num_squares.py)
+### 组合总和
+[combine_num.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/combine_num.py)

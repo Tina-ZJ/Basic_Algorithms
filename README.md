@@ -81,3 +81,5 @@
 [num_squares.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/num_squares.py)
 ### 组合总和
 [combine_num.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/combine_num.py)
+### 梯度下降算法演示
+[gradient_decent.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/gradient_decent.py)

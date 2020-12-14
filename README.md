@@ -82,6 +82,6 @@
 ### 组合总和
 [combine_num.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/combine_num.py)
 ### 梯度下降算法演示
-[gradient_decent.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/gradient_decent.py)
+[gradient_descent.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/gradient_descent.py)
 ### PageRank迭代算法演示
 [PageRank.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/PageRank.py)

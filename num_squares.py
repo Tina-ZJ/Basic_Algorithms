@@ -3,6 +3,10 @@ import sys
 import math
 
 def num_squares(n):
+	'''
+	求一个整数的最少平方数个数，比如12=2^2+2^2+2^2
+	动态规划求解
+	'''
 	square_nums = [i*i for i in range(0, int(math.sqrt(n))+1)]
 	dp = [float('inf')] * (n+1)
 	dp[0] = 0

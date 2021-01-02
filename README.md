@@ -74,7 +74,7 @@
 ### 路径总数
 [sum_path.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/sum_path.py)
 ### 最长等差数列
-[max_arithmetic_sequence.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/max_arighmetic_sequence.py)
+[max_arithmetic_sequence.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/max_arithmetic_sequence.py)
 ### 组合硬币数量
 [coins_select.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/coins_select.py)
 ### 最少完全平方数

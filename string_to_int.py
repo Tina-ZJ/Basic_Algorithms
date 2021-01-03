@@ -5,6 +5,10 @@ import sys
 
 
 def StrToInt(s):
+	'''
+		将字符串string转换成int类型，中间有+，-符号忽略，首字符为-，则就是
+		负整数
+	'''
 	#非法判断
 	if s==None or len(s) < 1:
 		raise Exception("string should not none")

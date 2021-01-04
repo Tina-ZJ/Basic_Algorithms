@@ -4,6 +4,9 @@ import numpy as np
 
 
 def getCommon(s1, s2):
+	'''
+		求两个字符串的公共长，动态规划求解
+	'''
 	m = len(s1)
 	n = len(s2)
 	# save common len

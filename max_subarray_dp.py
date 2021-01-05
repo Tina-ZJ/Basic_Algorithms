@@ -3,6 +3,9 @@ import sys
 
 #动态规划求解，时间复杂度O(n)，空间复杂度O(1)
 def maxSubArray(array):
+	'''
+		求一个数组的最大子数组和
+	'''
 	for i in range(1, len(array)):
 		array[i] = max(array[i-1]+array[i], array[i])
 

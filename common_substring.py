@@ -22,12 +22,14 @@ def getCommon(s1, s2):
 			if d[i+1][j+1] > maxlen:
 				maxlen = d[i+1][j+1]
 				index = i
-	return maxlen, s1[index+1-maxlen:index+1]
+	return maxlen, d[m,n],s1[index+1-maxlen:index+1]
 
 
 if __name__=='__main__':
-	s1 = 'acdeffghi'
-	s2 = 'acdkrfghi'
-	maxlen, substring = getCommon(s1, s2)
+	s1 = 'acdeffghidk'
+	s2 = 'acdkrfghidk'
+	maxlen, maxlen2, substring = getCommon(s1, s2)
+	# maxlen=maxlen2
 	print(maxlen)	
+	print(maxlen2)	
 	print(substring)	

@@ -26,10 +26,10 @@ def getCommon(s1, s2):
 
 
 if __name__=='__main__':
-	s1 = 'acdeffghidk'
-	s2 = 'acdkrfghidk'
-	maxlen, maxlen2, substring = getCommon(s1, s2)
-	# maxlen=maxlen2
+	s1 = 'acdeeeeeeffghidk'
+	s2 = 'acdeeeeeekrfghidk'
+	maxlen, d, substring = getCommon(s1, s2)
+	# maxlen!=d
 	print(maxlen)	
-	print(maxlen2)	
+	print(d)	
 	print(substring)	

@@ -87,3 +87,5 @@
 [PageRank.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/PageRank.py)
 ### 求数组和为某个值的方法数
 [sum_count.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/sum_count.py)
+### 判断一个字符串是否可以分割
+[wordSeg.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/wordSeg.py)

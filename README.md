@@ -89,3 +89,5 @@
 [sum_count.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/sum_count.py)
 ### 判断一个字符串是否可以分割
 [wordSeg.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/wordSeg.py)
+### 求两个数字之和
+[twoSum.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/twoSum.py)

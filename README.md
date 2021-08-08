@@ -91,3 +91,5 @@
 [wordSeg.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/wordSeg.py)
 ### 求两个数字之和
 [twoSum.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/twoSum.py)
+### viterbi算法求解
+[viterbi.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/viterbi.py)

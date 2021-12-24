@@ -35,7 +35,7 @@ def quick_sort(A,p,r):
 
 
 if __name__=='__main__':
-	A = [2,8,7,1,3,5,6,4]
+	A = [10,8,7,1,3,5,6,4]
 	print(A)
 	quick_sort(A,0,len(A)-1)
 	print(A)

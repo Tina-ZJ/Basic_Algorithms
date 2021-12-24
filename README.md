@@ -93,3 +93,7 @@
 [twoSum.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/twoSum.py)
 ### viterbi算法求解
 [viterbi.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/viterbi.py)
+### topk求解
+[topk.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/topk.py)
+### quick_sort_topk基于快速排序的topk求解
+[quick_sort_topk.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/quick_sort_topk.py)

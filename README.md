@@ -97,3 +97,7 @@
 [topk.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/topk.py)
 ### quick_sort_topk基于快速排序的topk求解
 [quick_sort_topk.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/quick_sort_topk.py)
+### 求一个数的平方根
+[num_sqrt.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/num_sqrt.py)
+### 求一个字符串无重复的字符串长度
+[max_num.py](https://github.com/Tina-ZJ/Basic_Algorithms/blob/master/max_num.py)
